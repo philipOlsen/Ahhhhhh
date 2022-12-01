@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <!--Hentet fra en oppgave vi har jobbet med tidligere. Den får nettsiden til å funke bedre i flere nettlesere-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="font/css/fontawesome.css" rel="stylesheet">
+        <link href="font/css/solid.css" rel="stylesheet">
+        <link href="font/css/brands.css" rel="stylesheet">
+        <!--https://fontawesome.com/-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--https://favicon.io/favicon-generator/-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!--https://fonts.google.com/specimen/Roboto-->
+        <title>Webutvikling Deleksamen 2, UU vs SEO</title>
+    </head>
+<body>
+    <header>
+        <h1>Tittel</h1>
+        <a href="index.html"><img src="favicon_io/favicon-32x32.png"></a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-snowflake"></i></a></li>
+            <!--https://fontawesome.com/icons/snowflake?s=solid&f=classic-->
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="uu-vs-seo.html">UU vs SEO</a></li>
+            <li><a href="cms.html">CMS</a></li>
+            <li><a href="analyse.html">Analyse</a></li>
+            <li><a href="kontakt.html">Kontakt oss</a></li>
+        </ul>
+    </nav>
+    <main class="article-oppgave">
+        <h3>UU vs SEO</h3>
+        <article class="artikkel">
+            <!--bilde cabin: https://unsplash.com/photos/kVKz9qnJC-k-->
+            <h4>UU</h4>
+            <p>UU (universell utforming) er at noe skal være mulig å bruke for så mange mennesker som mulig uansett hva slags funksjonsevne en bruker har. Dette er lovpålagt og kan ha store konsekvenser hvis du ikke gjør tiltak for å gjøre siden vennlig for så mange brukere som mulig. Som webutvikler så må vi tenke at vi kan få brukere som har dårlig hørsel/døve, blinde/svaksynte/fargeblinde, begrenset motoriske evner og kognitive vansker (konsentrasjon osv.).</p>
+            <p>Så det neste er å gå igjennom hva man kan gjøre for at siden din har god UU. Det første jeg vil gå igjennom er fargevalg. Fargevalg har mye å si for nettsiden både utseende og ofte har man funksjonalitet knyttet til farger som for eksempel at noe bytter farge når vi hover-er over noe. Når man skal velge farge så er det viktig at den er sterk og kan sees, ikke for mange nyanser så det er tydelig hvis det er fargeskifte og linker og annet klikkbart innhold må ha for eksempel understrek for å vise at den klikkbar. Hvis du skal bruke flere farger så er det viktig at det er kontrast mellom dem slik at det blir tydelig for brukeren. Navigasjon er et viktig punkt i UU. For at alle skal kunne navigere siden din lett så er det viktig med en god hovedmeny. Dette innebærer et søkefelt som er lett tilgjengelig, nettsted kart kan være nyttig som viser sidenes plassering, det skal være lett å klikke på knapper i menyen. Du skal også kunne navigere siden din gjennom å bare bruke tastaturet. Tabindex lar deg gi elementer som ikke vanligvis kan «tabbes» til.</p>
+            <p>Det er også viktig å ha gode linker med tydelige og forklarende tekster slik at man kan lese linken for å vite hvor den fører og hva den handler om.  Alt dekorativt som for eksempel bilder eller videoer skal ha en alt i taggen sin slik at folk som bruker opplesnings verktøy vet hva det. Hvis det ikke er relevant innhold så skal du fortsatt ha en tom alt tag. Semantikk er det siste jeg skal gå igjennom og er kanskje det viktigste innenfor UU. Gode semantiske tagger og struktur gjør at nettsiden blir lettere å navigere og ved hjelp av WAI-ARIA så kan man også gi semantikk til tagger som ikke har en «semantisk verdi». Dette hjelper spesielt personer som har opplesningsprogrammer som gjør det lettere for dem å navigere sidene.</p>
+            <h4>SEO</h4>
+            <p>SEO (seach engine optimization) er hvordan søkemotorer ser din nettside. Hvis en nettside har god SEO vil det gjøre at søkemotorene øker rangeringen på nettsiden som gjør at du havner høyere på søkelisten. </p>
+            <p>Nå som vi vet hva SEO er så må vi gå igjennom hvordan man oppnår god SEO. Det første jeg vil gå igjennom er Crawlers. Crawlers er et slags «program» som går igjennom og kartlegger sidene og lenkene på siden din det som er på siden. Så god intern linking av siden vil gjøre at crawlers kan gå gjennom siden din og vil da gjøre at søkemotoren liker deg bedre. Det at det er gode interne linker hjelper også mye for brukervennligheten til siden og gjør den lett å navigere. Søkemotorer liker ikke trege sider så prøv å minimer så mye som mulig. Unngå store bilder/videofiler, mange CSS ark, mye intern CSS og javascript på hver enkel side. Hvis du klarer å unngå det så vil det hjelpe rangeringen din. Responsivt design er også svært viktig når det kommer til SEO. Store deler av spesielt google sin trafikk kommer fra mobile enheter og hvis din nettside ikke har god responsivt design og er optimalisert for mobile enheter så vil du få lavere rangering.</p>
+            <p>HTML strukturen har mye å si for hvilken rangering du får. Mye av dette handler om god semantikk. Et kjempeviktig tema innenfor SEO er semantiske tagger. De semantiske taggene i html-en din skal representere det faktiske innholdet. Alltid bruk tid fra starten av et prosjekt til å bygge en god semantisk struktur. Title taggen er kanskje den viktigste taggen fordi det er det tittelen på siden vil dukke opp som når noen søker på den. Derfor er det viktig å ha en god title for at flere vil klikke på den og at den kommer opp når folk søker. Selve innholdet er en stor del av SEO og det er derfor viktig å skille mellom innhold, design og funksjonalitet. Det må være god kvalitet på tekst, bilder og lyd. Søkemotoren ser også på hva slags ord som blir brukt så hvis man bruker flere nøkkelord (spesielt i url-slugs) som er relevante til det man søker og etter så hjelper det veldig. Den ser også på hvor nylig oppdatert innholdet ditt er også om det ligner på annet innhold som ligger der ute, så prøv å vær unik.</p>
+
+            <section class="kilder">
+                <h4>Kilder:</h4>
+                    <a href="https://lms.webtricks.blog/kurs/webutvikling/seo/hva-er-seo#hab47e053b57a">https://lms.webtricks.blog/kurs/webutvikling/seo/hva-er-seo#hab47e053b57a</a>
+                    <a href="https://hiof.instructure.com/courses/6307/files/1205095?wrap=1">https://hiof.instructure.com/courses/6307/files/1205095?wrap=1</a>
+                    <a href="https://www.mentimeter.com/app/presentation/al5p1vsc2kthaqjbx1dhnp4yye8wt3bn/imy48n1k31qp">https://www.mentimeter.com/app/presentation/al5p1vsc2kthaqjbx1dhnp4yye8wt3bn/imy48n1k31qp</a>
+                    <a href="https://www.shopify.com/partners/blog/seo-web-design">https://www.shopify.com/partners/blog/seo-web-design</a>
+                    <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">https://developers.google.com/search/docs/fundamentals/seo-starter-guide</a>
+                    <a href="https://hiof.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e9eaeec7-8894-489f-a104-aecc005489f4&start=62.188604">https://hiof.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e9eaeec7-8894-489f-a104-aecc005489f4&start=62.188604</a>
+                </section>
+
+            <img src="bilder/cabin.jpg" alt="Bilde av en hytte i en skog med masse snø">
+        </article>
+
+        <div class="tabell">
+              <div class="column1">
+                <div class="rad-overskrift"></div>
+                <div class="rad-overskrift2">UU</div>
+                <div class="rad-overskrift2">SEO</div>
+              </div>
+
+              <div class="column3">
+                  <div class="rad-overskrift">Semantikk</div>
+                  <div class="rad"><h4>UU </h4>Som nevnt i artikkelen så er semantikk en veldig viktig del av UU. Semantiske tagger brukes hele tiden i webutvikling, men når det kommer til UU så blir det en nødvendighet. For brukere som bruker programmer for å lese opp siden bruker den semantiske strukturen i HTML-en din til å forstå siden. Hvis du ikke bruker riktige tags så klarer ikke programmet å formidle siden. God struktur innebærer at du bruker tags som gir «mening». En annen ting som er viktig er alt tags på bilder og videoer slik at det kan leses opp. WAI-ARIA er en standard som gjør at du kan gi semantisk verdi til elementer uten innebygd semantikk.</div>
+                  <div class="rad"><h4>SEO </h4>Igjen som nevnt i artikkelen så er semantikk svært viktig i SEO også. God struktur i html-en din sammen med god intern linket struktur gjør at det er lettere for crawlers å gå igjennom siden din. Søkemotorer liker sider som har god struktur og ikke «jukser» for å bli fort ferdig. SEO og UU går litt hånd i hånd siden begge vil at sider som blir brukt skal være tilgjengelig for alle på alle plattformer. Hvis du bruker gode tags med gode nøkkelord også så hjelper det veldig med søkemotoren og gjør at du blir rangert høyere.  </div>
+              </div>
+
+              <div class="column4">
+                  <div class="rad-overskrift">Responsivt design</div>
+                  <div class="rad"><h4>UU </h4>Det er flere ting man kan gjøre med responsivt design som gjør at flere brukere kan bruke en nettside. Det er viktig at nettsiden er responsiv slik at man kan bruke nettsiden på mobile enheter hvis man vil. En annen ting er responsiv typografi som gjør at brukeren kan bruke sin egne zoom innstillinger. Dette er spesielt viktig for svaksynte som kanskje trenger mye mer zoom en andre. Det er også da viktig med responsive bilder som skalerer seg sammen med zoomen og at det fungerer på flere enheter.</div>
+                  <div class="rad"><h4>SEO </h4>Responsivt design er en must i SEO. Mye av trafikken til google kommer fra mobile enheter så hvis du ikke har responsivt design så vil ikke søkemotoren rangere deg høyt. Responsivt design blir en større og større del av utvikling siden mobile enheter blir mer og mer brukt og derfor er det viktig å ha enten en hel egen mobil nettside eller at nettsiden tilpasser ved mindre skjermer.</div>
+              </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://twitter.com/hiofnorge">Twitter</a></li>
+            <li><a href="https://www.facebook.com/hiofnorge/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/hiofnorge/">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
