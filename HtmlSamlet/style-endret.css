@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"
+                        "nav nav nav"
+                        ". main ."
+                        "footer footer footer";
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    grid-area: header;
+    background: url(../bilder/sno-background.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: auto;
+    padding-left: 12rem;
+}
+header i{
+    padding: 1rem;
+    font-size: 35px;
+    color: black;
+}
+
+header i:hover{
+    color: white;
+}
+/*Background bilde snø: https://unsplash.com/photos/PyR3GEiGkQM--!>*/
+/*Fant kode for å ordne background bilde: https://www.w3schools.com/html/html_images_background.asp*/
+
+nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    background-color: #3A506B;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+nav ul i{
+    color: #C0E8F9;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #C0E8F9;
+}
+
+nav ul a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+nav ul i:hover{
+    color: white;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main a{
+    text-decoration: none;
+    border: solid #3A506B;
+    background-color: #3A506B;
+    color: #C0E8F9;
+    padding: 4px;
+}
+
+main a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.underoverskrift {
+    margin-top: 2rem;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.artikkelkort {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.artikkelkort article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+img {
+    max-width: 80%;
+    max-height: auto;
+}
+
+.article-oppgave{
+    grid-area: main;
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
+.article-oppgave h3{
+    text-align: left;
+}
+
+.artikkel {
+    display: flex;
+    flex-direction: column;
+}
+/*.artikkel p {
+    max-width: 500px;
+*/
+
+.artikkel img{
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    max-height: auto;
+}
+
+.kilder a{
+    text-decoration: none;
+    border: transparent;
+    background-color: white;
+    color: blue;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Brukte linken under for å lage tabellen
+https://dev.to/flippedcoding/how-to-make-a-table-without-using-the-html-table-elements-5e11*/
+.tabell {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.column1{
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.column3, .column4 {
+    margin-bottom: 1rem;
+    width: 50%;
+
+}
+
+.rad-overskrift {
+    border: 1px black solid;
+    text-align: center;
+    min-height: 3rem;
+    margin: auto;
+
+    font-size: 20px;
+}
+
+.rad-overskrift2 {
+    border: 1px black solid;
+    text-align: center;
+    margin: auto;
+    width: auto;
+    font-size: 20px;
+    height: 50%;
+}
+
+.rad{
+    border: 1px black solid;
+    min-height: 3rem;
+    max-height: auto;
+    margin: auto;
+    width: 100%;
+    text-indent: 1rem;
+    height: 50%;
+}
+
+.rad h4{
+  display: none;
+}
+
+.kontaktInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: solid #3A506B;
+    background-color: #3A506B;
+    color: #C0E8F9;
+}
+
+.kontaktInfo ul {
+    list-style-type: none;
+}
+
+.kontaktInfo ul li{
+
+    padding: 1.2rem;
+    text-align: left;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    background-color: #3A506B;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: #C0E8F9;
+}
+
+footer ul a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/*https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+Brukte for å finne vanlige størrelser på andre skjermer*/
+
+@media only screen and (max-width: 600px){
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
+        min-height: 100vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .artikkelkort{
+        flex-wrap: wrap;
+    }
+
+    .article-oppgave{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+        min-width: auto;
+        width: auto;
+    }
+
+    .artikkel{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tabell{
+      max-width: 80%;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .rad{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rad h4{
+      display: contents;
+    }
+
+    .rad-overskrift{
+        height: auto;
+    }
+    .rad-overskrift2{
+        height: auto;
+    }
+    .column1{
+      display: none;
+    }
+    .column3, .column4{
+      width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px){
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header header header"
+                            "nav nav nav"
+                            ". main ."
+                            "footer footer footer";
+        min-height: 100vh;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .artikkelkort{
+        flex-wrap: wrap;
+    }
+
+    .tabell{
+      max-width: 75%;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .rad{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rad h4{
+      display: contents;
+      font-size: 20px;
+    }
+
+    .rad-overskrift{
+        height: auto;
+    }
+    .rad-overskrift2{
+        height: auto;
+    }
+    .column1{
+      display: none;
+    }
+    .column3, .column4{
+      width: 100%;
+    }
+}
